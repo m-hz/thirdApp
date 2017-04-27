@@ -1,17 +1,17 @@
 <div class="container-fluid">
-  <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+  <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse row">
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand" href="#">Adnan's Third App</a>
+    <a class="navbar-brand" routerLink="/home">Adnan's Third App</a>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" routerLink="/home">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Away</a>
+          <a class="nav-link" routerLink="/away">Away</a>
         </li>
         <li class="nav-item">
           <a class="nav-link disabled" href="#">Forbidden Land</a>
@@ -23,7 +23,6 @@
       </form>
     </div>
   </nav>
+  <div></div>
+  <router-outlet></router-outlet>
 </div>
-<h1>
-  {{title}}
-</h1>
