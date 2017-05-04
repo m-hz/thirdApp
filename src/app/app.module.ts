@@ -11,6 +11,8 @@ import { AppComponent } from './app.component';
 import { AwayComponent } from './away/away.component';
 import { HomeComponent } from './home/home.component';
 
+import { BrandService } from './brand.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +26,7 @@ import { HomeComponent } from './home/home.component';
     NgbModule.forRoot(),
     AppRoutes
   ],
-  providers: [],
+  providers: [BrandService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
